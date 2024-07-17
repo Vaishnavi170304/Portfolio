@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Profile page of Vaishnavi">
+    <title>Vaishnavi's Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="pic/vklogo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>  
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="nav-logo">
+                <img src="pic/vklogo.jpg" alt="vk-logo">
+            </a>
+            <h3>Vaishnavi Kathiresan</h3>
+            <div class="nav-toggle" id="menu-toggle"><i class="fas fa-bars"></i>
+                <div class="nav-menu popup" id="menu">
+                    <span class="close">&times;</span>
+                    <ul class="nav-list">
+                        <li><a href="pic/Vaishnavi Kathiresan.pdf" class="resume-button" download="">Download Resume</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skill">Skill</a></li>
+                        <li><a href="#proj">Project</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>            
+                </div>
+            </div>
+            <div class="nav-menu" id="menu">
+                <a href="pic/Vaishnavi Kathiresan.pdf" class="resume-button" download="">Download Resume</a>
+                <a href="#about">About</a>
+                <a href="#skill">Skill</a>
+                <a href="#proj">Project</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    
+    <center>
+    <header id="about">
+        <img src="pic/Vaishu.jpg" alt="Vaishnavi pic">
+        <h1>This is Vaishnavi, a <span class="about-me"></span></h1>
+        <p>Recent graduate with solid foundation in Front End Web development and C++ programming language technologies gained through intensive coursework and pratical projects. Eager to apply technical skills in a dynamic work environment, contributing to innovative projects and further enhancing my expertise in software development and web design. Passionate about continuous learning and adapting to new technologies to drive impactful solution. Excited to embark on a career journey in a collaborative work setting, levaraging my problem-solving skills and innovative mind set to make  meaningfull contributions to the organization's growth and success.</p>
+    </header>
+
+    <section id="skill">
+        <h2>My Technical Skills</h2>
+        <div class="skills-list">
+            <ul class="skills-list">
+                <li>Web development</li>
+                <li>Python</li>
+                <li>C++</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section class="icon-scroll">
+        <div class="icon-container">
+            <img src="pic/html.jpg" alt="html">
+            <img src="pic/css.jpg" alt="css">
+            <img src="pic/js.png" alt="js">
+            <img src="pic/nodejs.png" alt="nodejs">
+            <img src="pic/react.jpg" alt="react">
+            <img src="pic/bootstrap.jpg" alt="bootstrap">
+            <img src="pic/python.webp" alt="python">
+            <img src="pic/c++.jpg" alt="c++">
+        </div>
+    </section><hr>
+
+    <section id="programming-lang">
+        <h2>Progamming Languages</h2>
+        <div class="skill">
+            <p>HTML</p>
+            <div class="progress-bar" data-progress="95"></div>
+        </div>
+        <div class="skill">
+            <p>CSS</p>
+            <div class="progress-bar" data-progress="90"></div>
+        </div>
+        <div class="skill">
+            <p>JavaScript</p>
+            <div class="progress-bar" data-progress="75"></div>
+        </div>
+    </section><hr>  
+    
+    <section id="proj">
+        <h2>My Projects</h2>
+        <p>Take a look at some of my works</p>
+        <section id="projects">
+            <div class="project-thumnail">
+                <div class="thumnail-content">
+                    <img src="pic/nykaa.jpeg" alt="">
+                    <h3>Nykaa clone</h3>
+                    <p>Recreated nykaa website using basic html, css & js code</p> 
+                    <button class="know-more" data-modal="projmodal1">Know more</button>
+                </div>
+            </div>
+            <div class="project-thumnail">
+                <div class="thumnail-content">
+                    <img src="pic/fashion-store-logo-design.jpg" alt="">
+                    <h3>E-commerce site</h3>
+                    <p>Created a e-commerce site in the name of Fashion store</p>
+                    <button class="know-more" data-modal="projmodal2">Know more</button>
+                </div>
+            </div>
+            <!-- <div class="project-thumnail">
+                <div class="thumnail-content">
+                    <img src="/pic/bootstrap.jpg" alt="">
+                    <h3>Nykaa clone</h3>
+                    <p>Recreated nykaa website</p>
+                    <button class="know-more" data-modal="projmodal3">Know more</button>
+                </div>
+            </div> -->
+        </section>
+    </section><hr>
+
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Mail ID"><br><br>
+
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" placeholder="Message"></textarea><br><br>
+
+            <button type="submit">Send</button>
+        </form>
+    </section><hr>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+
+    <section>
+        <h2>Contact Information</h2>
+        <p>Let's connect!</p>
+        <p><a href="https://www.linkedin.com/in/vaishnavikathiresan?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " class="icon-link linkedin-icon"><i class="fa-brands fa-linkedin-in"></i></a> | <a href="https://github.com/Vaishnavi170304" class="icon-link github-icon"><i class="fa-brands fa-github"></i></a> | <a href="mailto:vaishukathir17@gmail.com" class="icon-link email-icon"><i class="fas fa-envelope"></i></a></p>
+        <p><a href="" class="icon-link phone-icon"><i class="fas fa-phone"></i></a><b>+91 6382375241</b></p>
+    </section><hr>
+
+    <footer>
+        <p>&copy; 2024 Vaishnavi's Portfolio</p>
+    </footer>
+    </center>
+
+    <div id="projmodal1" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Nykaa Clone</h2>
+            <hr>
+            <div class="modal-body">
+                <div class="modal-row">
+                    <div class="column describe">
+                        <p>Recreated Nykaa website with basic HTML, CSS code the images I have used in this nykaa clone are took from its website. I have done this project in my beginning level of the course</p>
+                        <a href="https://vaishnavi170304.github.io/nykaaclone/ " target="_blank" class="github-link"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="column img-carousel">
+                        <div class="slideshow-container">
+                            <div class="mySlides">
+                                <img src="pic/nykaa1.jpg" alt="">
+                            </div>
+                            <div class="mySlides">
+                                <img src="pic/webpage1.png" alt="">
+                            </div>
+                            <div class="mySlides">
+                                <img src="pic/webpage2.png" alt="">
+                            </div>
+                            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="projmodal2" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>E-commerce site</h2>
+            <hr>
+            <div class="modal-body">
+                <div class="modal-row">
+                    <div class="column describe">
+                        <p>Created a e-commerce site using HTML, CSS & JS. I have used a advance html and css to create this website. Created this website in a responsive way that it can be access in any device.</p>
+                        <a href="https://vaishnavi170304.github.io/e-commerce/" target="_blank" class="github-link"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="column img-carousel">
+                        <div class="slideshow-container">
+                            <div class="mySlides">
+                                <img src="pic/e-comm1.png" alt="">
+                            </div>
+                            <div class="mySlides">
+                                <img src="pic/e-comm2.png" alt="">
+                            </div>
+                            <div class="mySlides">
+                                <img src="pic/e-comm3.png" alt="">
+                            </div>
+                            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!-- 
+    <div id="projmodal3" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Project title</h2>
+            <hr>
+            <div class="modal-body">
+                <div class="modal-row">
+                    <div class="column describe">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolorum accusantium deserunt voluptatibus minima vero in, ex aliquam. Culpa quae, repudiandae voluptatem nesciunt delectus laborum.</p>
+                        <a href="" target="_blank" class="github-link"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="column img-carousel">
+                        <div class="slideshow-container">
+                            <div class="mySlides">
+                                <img src="/pic/c++.jpg" alt="">
+                            </div>
+                            <div class="mySlides">
+                                <img src="/pic/html.jpg" alt="">
+                            </div>
+                            <div class="mySlides">
+                                <img src="/pic/vklogo.jpg" alt="">
+                            </div>
+                            <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</body>
+</html>
