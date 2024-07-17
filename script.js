@@ -154,13 +154,32 @@ document.addEventListener('scroll', function() {
     emailjs.init('3FpLHeICW93CkaOIJ');
 })();
 
-document.getElementById('contact-form').addEventListener('submit', function(event) {
+document.getElementById('contact-form').addEventListener('submit', function handleSubmit(event) {
     event.preventDefault();
 
     emailjs.sendForm('service_3xzc83p', 'template_n6xhyva', this) 
         .then(function() {
             alert('Email sent successfully!');
+            document.getElementById('contact-form').reset();
         }, function(error) {
             alert('Failed to send email: ' + JSON.stringify(error));
         });
 });
+
+
+const scrollbtn = document.getElementById('scrollToTop');
+
+window.onscroll = function() {
+    if (document.documentElement.scrollTop > 100) {
+        scrollbtn.style.display = 'block';
+    } else {
+        scrollbtn.style.display = 'none';
+    }
+};
+
+scrollbtn.onclick = function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+};
