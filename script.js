@@ -72,8 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
  
     var modals = {
         projmodal1: document.getElementById('projmodal1'),
-        projmodal2: document.getElementById('projmodal2'),
-        projmodal3: document.getElementById('projmodal3')
+        projmodal2: document.getElementById('projmodal2')
     };
 
  
@@ -107,11 +106,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
  
-    var slideIndex = [1, 1, 1];
-    var slideId = ["projmodal1", "projmodal2", "projmodal3"];
+    var slideIndex = [1, 1];
+    var slideId = ["projmodal1", "projmodal2"];
     showSlides(1, 0);
     showSlides(1, 1);
-    showSlides(1, 2);
 
     function plusSlides(n, no) {
         showSlides(slideIndex[no] += n, no);
